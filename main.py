@@ -16,7 +16,9 @@ dessert.Base.metadata.create_all(bind=engine)
 origins = [
     "http://localhost",
     "http://localhost:8080",
-    'https://fastapi-image-upload-m1b1.onrender.com'
+    "http://localhost:5173",   # <-- Vite dev server
+
+    'https://fastapi-image-upload-m1b1.onrender.com'  # backend
 ]
 
 app.add_middleware(
